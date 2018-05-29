@@ -92,8 +92,11 @@ sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-de
 
 **参考链接：**
 [Cmake知识----编写CMakeLists.txt文件编译C/C++程序](https://www.cnblogs.com/cv-pr/p/6206921.html)
+
 [opencv-3.0.0在Ubuntu14.04下的配置与安装](https://blog.csdn.net/junmuzi/article/details/49888123)
+
 [Ubuntu-Opencv Ubuntu14.04 Opencv3.3.0 安装配置及测试](https://blog.csdn.net/lgh0824/article/details/78487234)
+
 [Linux\Ubuntu 16.04配置Opencv](https://blog.csdn.net/keith_bb/article/details/52685231)
 下一篇：ubuntu下CLion的配置和使用
 
