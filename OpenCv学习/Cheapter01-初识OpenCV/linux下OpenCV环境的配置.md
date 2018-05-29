@@ -76,7 +76,7 @@ sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-de
 	
 	
 	    return 0;
-}
+	}
 	```
 	OK...
 
