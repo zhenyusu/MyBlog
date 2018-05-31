@@ -1,7 +1,7 @@
 # linux下环境的配置（ubuntu 16.04）
 
-
 1. 官网地址：[http://opencv.org/](http://opencv.org/)，我下的是3.3的版本，格式为 `tar.gz`
+
 2. 在 `/home/你的用户名/`下新建一个`software/opencv`文件夹来存放源码
 ``` 
 mkdir software
@@ -32,22 +32,25 @@ sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-de
 	- 查看opencv依赖库：`pkg-config opencv --libs`
 
 6. opencv环境的配置
-	```
+	
 	//链接库被系统共享
-	sudo gedit /etc/ld.so.conf (在弹出的窗口中复制如下一段文字：/usr/local/lib)
-	sudo ldconfig (使得配置生效)
-
+	```sudo gedit /etc/ld.so.conf ```
+(在弹出的窗口中复制如下一段文字：/usr/local/lib)
+![](http://oojl6chve.bkt.clouddn.com//18-5-31/36015880.jpg)
+	```sudo ldconfig ```(使得配置生效)
 	//为程序指定openvc的头文件位置
-	sudo gedit /etc/bash.bashrc
+	```sudo gedit /etc/bash.bashrc```
 	(在弹出的窗口中添加
 	PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/local/lib/pkgconfig
 	export PKG_CONFIG_PATH
 	)
-	source /etc/bash.bashrc 使得配置生效
-	```
-7. 运行测试
-	首先先简答了解一下`CMakeLists.txt`文件的写法
+![](http://oojl6chve.bkt.clouddn.com//18-5-31/53366398.jpg)
+	```source /etc/bash.bashrc``` 使得配置生效
 	
+7. 运行测试
+	首先先简答了解一下 `CMakeLists.txt` 文件的写法
+	可以先看下这个博客：
+[Cmake知识----编写CMakeLists.txt文件编译C/C++程序](https://www.cnblogs.com/cv-pr/p/6206921.html)
 	1. 指定cmake版本
 		`cmake_minimum_required(VERSION 2.8)`
 	2. 指定项目名称，一般和项目的文件夹名称对应
@@ -64,6 +67,8 @@ sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-de
 	OK...
 
 	随便写一个程序用来显示图片
+
+	
 	```cpp
 	#include <iostream>
 	#include "opencv2/opencv.hpp"
@@ -76,19 +81,28 @@ sudo apt-get install build-essential libgtk2.0-dev libavcodec-dev libavformat-de
 	
 	
 	    return 0;
-}
+	}
 	```
 	OK...
 
-   开始运行（在CMakeLists.txt文件同级目录下）
+   开始运行
    ```
+	//新建build文件夹，进入文件夹cmake
+	mkdir build
+	cd build
 	cmake ..
+	```
+	```
+	//在CMakeLists.txt同级文件夹下make
+	cd ..
 	make
+	//运行
+	./DisplayImage
    ```
    
    OK...
 
-这里附上操作视频，看文档没配置成功的可以直接看视频操作。
+
 
 **参考链接：**
 [Cmake知识----编写CMakeLists.txt文件编译C/C++程序](https://www.cnblogs.com/cv-pr/p/6206921.html)
