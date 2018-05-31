@@ -1,4 +1,15 @@
-# linux下环境的配置（ubuntu 16.04）
+# linux下OpenCV环境的配置（ubuntu 16.04）
+---
+title: linux下OpenCV环境的配置
+date: 2018-05-17 12:23:48
+tags:
+    - OpenCV
+    - 文件管理
+categories:
+    - OpenCV
+keywords:
+description:
+---
 
 
 1. 官网地址：[http://opencv.org/](http://opencv.org/)，我下的是3.3的版本，格式为 `tar.gz`
