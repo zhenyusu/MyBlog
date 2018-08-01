@@ -22,9 +22,13 @@
 这是在了解了git基础知识的情况下，作为平常开发使用的命令手册。git基本知识可以参考一下博客：
 
 [廖雪峰git教程](https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000)
+
 [阮一峰：git远程操作详解](http://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
 [阮一峰：git分支管理策略](http://www.ruanyifeng.com/blog/2012/07/git.html)
+
 [阮一峰：git工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
+
 
 **以下是复制粘贴**
 
