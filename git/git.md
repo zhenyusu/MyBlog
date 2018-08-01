@@ -1,3 +1,13 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [Git](#git)
+- [分支管理](#%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86)
+  - [分支介绍](#%E5%88%86%E6%94%AF%E4%BB%8B%E7%BB%8D)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 Git
 ---
 # 分支管理

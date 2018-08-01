@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+  - [git命令清单](#git%E5%91%BD%E4%BB%A4%E6%B8%85%E5%8D%95)
+- [1. 新建代码库](#1-%E6%96%B0%E5%BB%BA%E4%BB%A3%E7%A0%81%E5%BA%93)
+- [2. 配置](#2-%E9%85%8D%E7%BD%AE)
+- [3.  增加/删除文件](#3--%E5%A2%9E%E5%8A%A0%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6)
+- [4. 代码提交](#4-%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4)
+- [5. 分支](#5-%E5%88%86%E6%94%AF)
+- [6. 标签](#6-%E6%A0%87%E7%AD%BE)
+- [7. 查看信息](#7-%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF)
+- [8. 远程同步](#8-%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5)
+- [9. 撤销](#9-%E6%92%A4%E9%94%80)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
  git命令清单
 -----
 [阮一峰:常用git命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html)
