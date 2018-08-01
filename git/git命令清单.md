@@ -29,6 +29,8 @@
 
 [阮一峰：git工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
 
+[易百git教程](https://www.yiibai.com/git/)
+
 
 **以下是复制粘贴**
 
