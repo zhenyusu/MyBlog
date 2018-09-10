@@ -1,0 +1,24 @@
+git demo
+------
+#本地仓库：
+
+## 撤销修改
+
+###未添加到暂存区(没有git add)
+```bash
+readme.txt添加ccc
+(1) echo ccc >> readme.txt 
+恢复暂存区的文件到工作区
+(2) git checkout -- readme.txt
+```
+
+###添加到暂存区(没有git add),没有提交
+```bash
+重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
+(1)　git reset HEAD readme.txt
+丢弃工作区的修改
+(2)git checkout -- readme.txt
+```
+
+
+

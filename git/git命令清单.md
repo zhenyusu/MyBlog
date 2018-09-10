@@ -139,6 +139,8 @@ $ git checkout -b [branch]
 # 新建一个分支，指向指定的commit
 $ git branch [branch] [commit]
 
+#拉取远程分支到贝蒂
+ git fetch origin [branch_name]
 # 创建远程origin的dev分支到本地
 
 $ git checkout -b dev origin/dev
@@ -304,19 +306,19 @@ $ git push [remote] --all
 
 ```bash
 # 让这个文件回到最近一次git commit或git add时的状态。
-$ git checkout --[file]
+$ git checkout [--] [file]
 
 # 恢复某个commit的指定文件到暂存区和工作区
-$ git checkout [commit] [file]
+$ git checkout [commit] [--] [file]
 
 # 恢复版本库的所有文件到工作区
 $ git checkout .
 
 # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
-$ git reset [file]
+$ git reset　HEAD [file]
 
 # 重置暂存区与工作区，与上一次commit保持一致
-$ git reset --hard
+$ git reset  --hard HEAD
 
 # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
 $ git reset [commit]
