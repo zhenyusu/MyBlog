@@ -1,0 +1,75 @@
+星期三, 26. 九月 2018 10:50上午
+#RTSO-9002产品系统烧录
+##1. 烧录环境搭建准备
+(1) **系统要求:** 一台系统为ubuntu 16.06 64位的pc
+(2) **Linux Driver Package:** Tegra186_Linux_R28.1.0_aarch64.tbz2
+(3) **the Root File System:** Tegra_Linux_Sample-Root-Filesystem_R28.1.0_aarch64.tbz2
+(4) **BSP 支持包:** Realtimes_L4T_V222-4.tar
+
+**［注］**
+(2)(3)下载链接:http://www.realtimes.cn/uploads/download/tx2%E6%A0%B8%E5%BF%83%E5%8F%8A%E5%BC%80%E5%8F%91%E6%9D%BF%E4%BA%A7%E5%93%81%E9%A9%B1%E5%8A%A8.zip
+(4)下载链接：http://www.realtimes.cn/uploads/download/RTSO-9002%E4%BA%A7%E5%93%81%E9%A9%B1%E5%8A%A8282.zip
+
+其中:
+**t-arch |ver:**186
+**version-i:**1
+**module-i:**2
+**board-i:**2
+
+##2. 烧录环境搭建
+
+1. 将下载好的文件拷贝到ubuntu 16.04 pc(任意文件夹，可放到home目录)
+2.  解压 Linux Driver Package,生成文件夹目录 Linux_for_Tegra:
+```sudo tar -vxjf Tegra_Linux_Sample-Root-Filesystem_R28.1.0_aarch64```
+3. 设置根文件系统
+进入 Linux Driver Package 的根文件系统目录:```cd <your_L4T_root>/Linux_for_Tegra/rootfs```
+解压 the Root File System 运行:```sudo tar -jxpf ../../Tegra-Linux-Sample-Root-Filesystem_R28.1.0_aarch64.tbz2```
+运行 apply_binaries.sh 脚本拷贝 NVIDIA 用户空间库进入目标文件系统:
+```
+cd ..
+sudo ./apply_binaries.sh
+```
+
+##3. 安装 BSP 支持包
+
+1. 将Realtimes_L4T_V222-4.tar包解压到与 Linux_for_Tegra 文件夹同级目录下面:```sudo tar -xvf Realtimes_L4T_V222-4.tar```
+2. 进入到 Realtimes-L4T 文件夹 ，运行 ```sudo ./install.sh```
+
+安装成功， 会有 success 提示！
+
+##4. 系统烧录
+
+1. 阅读载板的用户手册，使机器进入 recovery 模式， 在 Linux_for_Tegra 目录下执行以下命令
+``` sudo ./flash rtso-9002-usb3-imx274 mmcblk0p1```
+烧录完成会提示 success
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
