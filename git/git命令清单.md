@@ -136,8 +136,15 @@ $ git branch [branch-name]
 # 新建一个分支，并切换到该分支
 $ git checkout -b [branch]
 
-# 新建一个分支，指向指定commit
+# 新建一个分支，指向指定的commit
 $ git branch [branch] [commit]
+
+#拉取远程分支到贝蒂
+ git fetch origin [branch_name]
+# 创建远程origin的dev分支到本地
+
+$ git checkout -b dev origin/dev
+
 
 # 新建一个分支，与指定的远程分支建立追踪关系
 $ git branch --track [branch] [remote-branch]
@@ -203,7 +210,7 @@ $ git checkout -b [branch] [tag]
 $ git status
 
 # 显示当前分支的版本历史
-$ git log
+$ git log  [--pretty=oneline]
 
 # 显示commit历史，以及每次commit发生变更的文件
 $ git log --stat
@@ -240,7 +247,10 @@ $ git diff
 $ git diff --cached [file]
 
 # 显示工作区与当前分支最新commit之间的差异
-$ git diff HEAD
+$ git diff HEAD 
+
+# 显示工作区与当前分支fie文件之间的差异
+$ git diff HEAD -- [file]
 
 # 显示两次提交之间的差异
 $ git diff [first-branch]...[second-branch]
@@ -259,6 +269,10 @@ $ git show [commit]:[filename]
 
 # 显示当前分支的最近几次提交
 $ git reflog
+ 
+ # 查看分支的合并情况
+$ git log --graph --pretty=oneline --abbrev-commit
+
 ```
 
 # 8. 远程同步 
@@ -291,20 +305,20 @@ $ git push [remote] --all
 # 9. 撤销
 
 ```bash
-# 恢复暂存区的指定文件到工作区
-$ git checkout [file]
+# 让这个文件回到最近一次git commit或git add时的状态。
+$ git checkout [--] [file]
 
 # 恢复某个commit的指定文件到暂存区和工作区
-$ git checkout [commit] [file]
+$ git checkout [commit] [--] [file]
 
-# 恢复暂存区的所有文件到工作区
+# 恢复版本库的所有文件到工作区
 $ git checkout .
 
 # 重置暂存区的指定文件，与上一次commit保持一致，但工作区不变
-$ git reset [file]
+$ git reset　HEAD [file]
 
 # 重置暂存区与工作区，与上一次commit保持一致
-$ git reset --hard
+$ git reset  --hard HEAD
 
 # 重置当前分支的指针为指定commit，同时重置暂存区，但工作区不变
 $ git reset [commit]
