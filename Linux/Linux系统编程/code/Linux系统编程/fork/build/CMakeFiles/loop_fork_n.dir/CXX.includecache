@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/fork/loop_fork.cpp
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+

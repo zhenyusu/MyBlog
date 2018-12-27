@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/execv.cpp
+unistd.h
+-
+stdio.h
+-
+
