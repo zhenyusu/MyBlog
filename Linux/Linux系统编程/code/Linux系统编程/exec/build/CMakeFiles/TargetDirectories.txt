@@ -1,0 +1,5 @@
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/build/CMakeFiles/rebuild_cache.dir
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/build/CMakeFiles/edit_cache.dir
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/build/CMakeFiles/execv.dir
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/build/CMakeFiles/output.dir
+/Users/suzhenyu/workplace/study/project/Linux/Linux系统编程/exec/build/CMakeFiles/execl.dir
