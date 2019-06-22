@@ -1,3 +1,0 @@
-/Users/suzhenyu/workplace/MyBlog/Linux/Linux系统编程/code/Linux系统编程/IPC/pipe/build/CMakeFiles/rebuild_cache.dir
-/Users/suzhenyu/workplace/MyBlog/Linux/Linux系统编程/code/Linux系统编程/IPC/pipe/build/CMakeFiles/edit_cache.dir
-/Users/suzhenyu/workplace/MyBlog/Linux/Linux系统编程/code/Linux系统编程/IPC/pipe/build/CMakeFiles/pipe1.dir

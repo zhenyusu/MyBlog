@@ -1,8 +1,0 @@
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/edit_cache.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/waitpid3.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/rebuild_cache.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/waitpid2.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/waitpid.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/wait2.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/wait1.dir
-/Users/suzhenyu/workplace/study/Linux/Linux网络编程/code/Linux系统编程/wait/build/CMakeFiles/orphan.dir
